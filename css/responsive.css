@@ -7,6 +7,9 @@
     .form_sections{
       display: none;
     }
+   logo{
+   margin-left:-44px;
+    }
     .icon-barr{
     display:none;
     }
