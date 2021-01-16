@@ -60,7 +60,8 @@
     background-color: red;
     position: fixed;
     top:95%;
-    width: 100%
+    width: 100%;
+    z-index: 1000;
   }
   .bottom-fixed-btn ul li{
     display:inline;
@@ -100,6 +101,10 @@
       font-weight: 500;
       color: #25669b;
     }
+    .first-mob-wrap{
+      display: none!important;
+    }
+   
 }
 
 @media(min-width:768px){
@@ -109,15 +114,22 @@
   .bottom-fixed-btn{
     display:none;
   } 
+  .sub-footer-wrap {
+    margin-top: -5px;
+   }
+}
+@media (min-width: 996px) and (max-width:1276px){
+  .envlope-1{
+    right: 27%;
+  }
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
-
    .our > h3, h1 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
    }
+   
    .first-mob-wrap{
     top: 6px;
     right: 39px;
@@ -157,11 +169,38 @@
   .envlope-1,.wrap_number{
     display: none!important;
   }
+  #myBtn{
+    right: 8px;
+    z-index:1001;
+    font-size: 20px;
+    padding: 0;
+    padding: 4px 13px;
+  }
+  .banner > .col-lg-6:first-child {
+    padding-top: 1.7rem;
+  }
 }
 @media (max-width:1024px){
   .whole_ban {
     height: calc(100vh - -30%)!important;
 
   }
+  .about-company p{
+    line-height: 24px;
+  }
 }
 
+@media (min-width: 768px) and (max-width:1099px) {
+  
+  .financial-tab,.gstr-tab{
+    margin-top:16px; 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .our > h3, h1 {
+    font-size: 20px;
+    font-weight: 700;
+   }
+}
